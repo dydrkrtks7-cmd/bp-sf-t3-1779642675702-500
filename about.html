@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <meta name="description" content="화곡 셔츠룸 AI 트렌드 완전 분석! 마포에서 가장 핫한 AI 기반 셔츠룸 서비스. 상세 정보와 지역 시그널까지 한방에. 지금 바로 확인하고 예약하세요.">
+    <meta name="keywords" content="화곡 셔츠룸, 마포 셔츠룸, AI 셔츠룸, 화곡 AI 룸, 셔츠룸 추천, 마포 유흥, AI 트렌드, 화곡 유흥, 마포 정보">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sf-t3-1779642675702-500.vercel.app/info">
+    <meta property="og:title" content="화곡 셔츠룸 AI 트렌드 | 마포 No.1 정보">
+    <meta property="og:description" content="AI 기반 화곡 셔츠룸, 완전 새로운 경험. 상세 정보와 지역 시그널 확인.">
+    <title>화곡 셔츠룸 정보 | 마포 AI 트렌드</title>
+    <style>
+        /* RESET & BASE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #1a1a1a;
+            color: #d4d4a0;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+            position: relative;
+        }
+        /* RAW CONCRETE TEXTURE (CSS only) */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 2px,
+                rgba(200, 200, 180, 0.02) 2px,
+                rgba(200, 200, 180, 0.02) 4px
+            ),
+            repeating-linear-gradient(
+                90deg,
+                transparent,
+                transparent 3px,
+                rgba(200, 200, 180, 0.01) 3px,
+                rgba(200, 200, 180, 0.01) 6px
+            );
+            pointer-events: none;
+            z-index: 0;
+        }
+        /* TYPOGRAPHY - BOLD RAW */
+        h1, h2, h3, h4 {
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #f0e68c;
+            text-shadow: 3px 3px 0 #2a2a2a;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            border-left: 6px solid #f0e68c;
+            padding-left: 20px;
+        }
+        h2 {
+            font-size: 2rem;
+            margin: 2rem 0 1rem;
+            border-bottom: 4px solid #f0e68c;
+            padding-bottom: 10px;
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin: 1.5rem 0 0.8rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        a {
+            color: #ff4500;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        a:hover {
+            color: #ff6347;
+            border-bottom-color: #ff4500;
+        }
+        /* BORDERS - 3-4px solid */
+        .brutal-border {
+            border: 4px solid #f0e68c;
+            padding: 20px;
+            margin: 20px 0;
+            background: rgba(30, 30, 30, 0.9);
+            box-shadow: 8px 8px 0 #2a2a2a;
+        }
+        /* LAYOUT */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px;
+        }
+        /* NAV */
+        nav {
+            background: #2a2a2a;
+            padding: 15px 20px;
+            margin-bottom: 30px;
+            border: 4px solid #f0e68c;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        nav .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #f0e68c;
+            text-transform: uppercase;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+        nav ul li a {
+            color: #d4d4a0;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            border: none;
+            padding: 5px 10px;
+            transition: background 0.2s;
+        }
+        nav ul li a:hover {
+            background: #f0e68c;
+            color: #1a1a1a;
+        }
+        /* HAMBURGER MENU */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 5px;
+        }
+        .hamburger span {
+            width: 30px;
+            height: 4px;
+            background: #f0e68c;
+            margin: 4px 0;
+            transition: 0.3s;
+        }
+        /* TEL LINK */
+        .tel-link {
+            display: inline-block;
+            background: #ff4500;
+            color: #fff;
+            padding: 12px 30px;
+            font-size: 1.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            border: 4px solid #f0e68c;
+            box-shadow: 5px 5px 0 #2a2a2a;
+            transition: all 0.2s;
+            text-decoration: none;
+        }
+        .tel-link:hover {
+            background: #ff6347;
+            transform: translate(-2px, -2px);
+            box-shadow: 7px 7px 0 #2a2a2a;
+            border-bottom: 4px solid #f0e68c;
+        }
+        /* CARDS */
+        .card {
+            border: 4px solid #f0e68c;
+            padding: 20px;
+            background: rgba(30, 30, 30, 0.9);
+            box-shadow: 5px 5px 0 #2a2a2a;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 8px 8px 0 #2a2a2a;
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        /* FOOTER */
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            border-top: 4px solid #f0e68c;
+            text-align: center;
+            color: #888;
+        }
+        /* RESPONSIVE 768 */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+            }
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                gap: 10px;
+                padding-top: 15px;
+            }
+            nav ul.active {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .tel-link {
+                font-size: 1.2rem;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- NAV -->
+        <nav>
+            <div class="logo">화곡 셔츠룸</div>
+            <button class="hamburger" onclick="this.nextElementSibling.classList.toggle('active')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul>
+                <li><a href="/">홈</a></li>
+                <li><a href="/info">정보</a></li>
+                <li><a href="/trend">트렌드</a></li>
+                <li><a href="/review">후기</a></li>
+                <li><a href="/contact">예약</a></li>
+            </ul>
+        </nav>
+
+        <!-- PAGE HEADER -->
+        <h1>화곡 셔츠룸 정보</h1>
+        <p class="brutal-border" style="font-size: 1.2rem; border-style: dashed;">
+            마포에서 가장 핫한 AI 기반 셔츠룸의 모든 것. 형, 여기 다 있어. 2025년 최신 정보로 완전 업데이트!
+        </p>
+
+        <!-- INFO SECTION 1: BASIC DETAILS -->
+        <section class="brutal-border">
+            <h2>📍 기본 정보 & 지역 시그널</h2>
+            <div class="grid-2">
+                <div>
+                    <h3>위치</h3>
+                    <p>서울 마포구 화곡동 중심가. 지하철 5호선 화곡역 3번 출구에서 도보 3분. 골목 입구에 'AI 셔츠룸' 네온사인 보이면 바로 그곳.</p>
+                    <p><strong>주소:</strong> 서울 마포구 화곡로 123-45 (비공개, 예약 시 안내)</p>
+                </div>
+                <div>
+                    <h3>운영 시간</h3>
+                    <p>매일 20:00 ~ 05:00 (연중무휴). 주말에는 인기 많으니까 미리 예약 필수야, 형.</p>
+                    <p><strong>연락처:</strong> <a href="tel:010-1234-5678" class="tel-link">010-1234-5678</a></p>
+                </div>
+            </div>
+            <div style="margin-top: 20px;">
+                <h3>왜 화곡 셔츠룸인가?</h3>
+                <p>화곡동은 마포에서도 유흥의 중심지로 떠오르는 중이야. 셔츠룸도 많지만, 우리는 AI 트렌드를 제일 먼저 도입해서 완전 다른 경험을 선사해. 형, 일반 셔츠룸이랑은 레벨이 달라.</p>
+            </div>
+        </section>
+
+        <!-- INFO SECTION 2: AI TREND DETAILS -->
+        <section class="brutal-border" style="border-color: #ff4500;">
+            <h2>🤖 AI 트렌드 완전 분석</h2>
+            <p>여기가 마포에서 AI 셔츠룸의 선두주자야. 2025년 최신 기술로 무장했어.</p>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>AI 매칭</h3>
+                    <p>고객 취향 분석해서 최적의 파트너 추천. 형이 좋아하는 스타일을 AI가 미리 파악해. 처음 가도 완전 찰떡궁합.</p>
+                </div>
+                <div class="card">
+                    <h3>스마트 룸</h3>
+                    <p>조명, 음악, 온도까지 AI가 자동 조절. 분위기 완전 럭셔리하게 만들어줌. 형, 여기 오면 다른 데 못 가.</p>
+                </div>
+                <div class="card">
+                    <h3>실시간 피드백</h3>
+                    <p>AI가 서비스 중간중간 피드백 받아서 바로바로 개선. 형이 불편한 거 없게 완전 세심하게 케어.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- INFO SECTION 3: FAQ -->
+        <section class="brutal-border">
+            <h2>❓ 자주 묻는 질문 (FAQ)</h2>
+            <div>
+                <h3>Q1. 가격은 어떻게 되나요?</h3>
+                <p>기본 1시간 20만원부터. AI 트렌드 패키지(2시간)는 35만원. 형, 가성비 끝판왕이라고 자부해. 자세한 건 전화로 물어봐.</p>
+            </div>
+            <div>
+                <h3>Q2. 예약은 필수인가요?</h3>
+                <p>완전 필수! 주말에는 최소 2~3일 전에 예약해야 자리 있어. 평일도 전날 예약 추천. <a href="tel:010-1234-5678">전화</a>나 사이트로 바로 예약 가능.</p>
+            </div>
+            <div>
+                <h3>Q3. AI 서비스는 처음인데 어렵지 않나요?</h3>
+                <p>전혀! 형이 편하게 즐기면 돼. AI가 다 알아서 해줌. 처음 오는 형들한테는 스페셜 가이드도 제공함.</p>
+            </div>
+            <div>
+                <h3>Q4. 화곡동에 처음 오는데 괜찮나요?</h3>
+                <p>당연하지! 화곡동은 마포에서도 핫플로 뜨는 중이고, 우리 셔츠룸은 역에서 가까워서 찾기 쉬워. 형, 걱정 마. 직원들이 친절하게 안내함.</p>
+            </div>
+        </section>
+
+        <!-- INFO SECTION 4: REGIONAL SIGNAL -->
+        <section class="brutal-border" style="border-style: double;">
+            <h2>🏙️ 마포 & 화곡 지역 시그널</h2>
+            <p>형, 이 동네는 진짜 뜨고 있어. 2025년 마포에서 화곡동이 핫플로 떠오른 이유를 알려줌.</p>
+            <div class="grid-2">
+                <div>
+                    <h3>화곡동의 매력</h3>
+                    <ul style="list-style: square; padding-left: 25px; color: #d4d4a0;">
+                        <li>지하철 5호선, 2호선 환승 쉽게 가능</li>
+                        <li>유흥가 재정비로 깔끔해진 거리</li>
+                        <li>젊은 층 유입으로 활기찬 분위기</li>
+                        <li>셔츠룸, 룸살롱 등 고급 유흥 밀집</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>마포 No.1 이유</h3>
+                    <ul style="list-style: square; padding-left: 25px; color: #d4d4a0;">
+                        <li>AI 트렌드 최초 도입으로 차별화</li>
+                        <li>단골 고객 리뷰 평점 4.9/5.0</li>
+                        <li>프라이빗한 공간으로 유명인 단속</li>
+                        <li>지역 커뮤니티에서 입소문</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="margin-top: 20px;"><strong>형, 여기 오면 화곡동의 진짜 매력을 느낄 수 있어. AI가 만들어주는 특별한 시간, 놓치지 마.</strong></p>
+        </section>
+
+        <!-- INFO SECTION 5: WHY CHOOSE US -->
+        <section class="brutal-border" style="border-color: #f0e68c;">
+            <h2>🔥 화곡 셔츠룸을 선택해야 하는 3가지 이유</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>1. AI 혁신</h3>
+                    <p>형, 일반 셔츠룸은 이제 올드해. AI가 도입된 우리 시스템은 고객 만족도 100% 목표로 해. 매칭, 분위기, 서비스 모두 AI가 책임짐.</p>
+                </div>
+                <div class="card">
+                    <h3>2. 완벽한 프라이버시</h3>
+                    <p>각
+</body>
+</html>
